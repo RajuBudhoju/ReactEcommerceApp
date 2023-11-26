@@ -4,7 +4,7 @@ import Music from '../music/Music';
 const Generics = () => {
     return (
         <div>
-            <Card style={{backgroundColor: "grey", color: 'white',font: 'bold', fontStyle:"italic",textAlign: "center", fontSize: '100px'}}>
+            <Card style={{backgroundColor: "grey", marginTop: "4%", color: 'white',font: 'bold', fontStyle:"italic",textAlign: "center", fontSize: '80px'}}>
                 <Card.Body>The Generics</Card.Body>
             </Card>
             <Music/>

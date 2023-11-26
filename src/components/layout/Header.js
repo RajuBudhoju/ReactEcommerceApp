@@ -6,7 +6,7 @@ import HeaderCartButton from './HeaderCartButton';
 function Header(props) {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark" >
+      <Navbar bg="dark" data-bs-theme="dark" className='fixed-top' expand="lg">
         <Container>
           <Nav style={{marginLeft: "40%", font: "bold", fontSize:"20px"} } className="me-auto">
             <Nav.Link href="#home">HOME</Nav.Link>

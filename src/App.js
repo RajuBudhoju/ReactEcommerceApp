@@ -20,13 +20,13 @@ function App() {
 
   return (
     <div>
-        <CartProvider>
-          {cartIsShown && <Cart onClose={hideCartHandler} />}
-          <Header onShowCart={showCartHandler} />
-          <main>
-            <Generics/>
-          </main>
-        </CartProvider>
+      <CartProvider>
+        {cartIsShown && <Cart onClose={hideCartHandler} />}
+        <Header onShowCart={showCartHandler} />
+        <main>
+          <Generics/>
+        </main>
+      </CartProvider>
       
     </div>
   );

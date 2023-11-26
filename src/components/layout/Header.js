@@ -1,8 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import HeaderCartButton from './HeaderCartButton';
 
-function Header() {
+function Header(props) {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -12,7 +13,7 @@ function Header() {
             <Nav.Link href="#features">STORE</Nav.Link>
             <Nav.Link href="#pricing">PRICE</Nav.Link>
           </Nav>
-          <Navbar.Brand href="#home">CART</Navbar.Brand>
+          <HeaderCartButton onClick={props.onShowCart} />
         </Container>
       </Navbar>
     </>
